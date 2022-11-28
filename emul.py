@@ -24,10 +24,11 @@ class Emul:
             self.setNamePath[name] = modules
 
     # Просмотр содержимого директории
-    def ls(self, commands):
+    def ls(self):
         catalog = self.chooseItemInDir(self.currentDir)
         print(*catalog, "\n", end='\n')
 
+    # Получение списка вложеных элементов
     def chooseItemInDir(self, directory):
         partsPath = cutPath(directory)  # Элементы пути
         border = len(partsPath)         # Граница пути

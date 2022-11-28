@@ -23,7 +23,7 @@ def main():
             if commands[0] == "pwd":
                 print(object.currentDir)
             elif commands[0] == "ls":
-                object.ls(commands)
+                object.ls()
             elif commands[0] == "cd":
                 object.comeDirectory(commands[1])
             elif commands[0] == "cat":
